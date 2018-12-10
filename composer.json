@@ -1,5 +1,24 @@
 {
+    "name": "jimchen/bazhuayu-api-client",
+    "description": "八爪鱼API SDK v2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JimChen",
+            "email": "18219111672@163.com"
+        }
+    ],
     "require": {
+        "php":">=5.5",
         "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev" : {
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+          "Bazhuayu\\": "src/"
+        }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 $header = <<<EOF
-This file is part of the /imchen/bazhuoyu-api-client.
+This file is part of the jimchen/bazhuoyu-api-client.
 
 (c) JimChen <18219111672@163.com>
 

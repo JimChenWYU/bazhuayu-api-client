@@ -11,14 +11,29 @@
     ],
     "require": {
         "php":">=5.5",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/cache": "3.4.*"
     },
     "require-dev" : {
+        "phpunit/phpunit": "^4.8",
+        "mockery/mockery": "0.9.x-dev"
     },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
           "Bazhuayu\\": "src/"
+        },
+        "files": [
+            "src/Support/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "tests/"
         }
+    },
+    "scripts": {
+        "cs": "php-cs-fixer --verbose fix src/",
+        "test": "sh ./vendor/bin/phpunit"
     }
 }
